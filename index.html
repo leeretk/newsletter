@@ -63,31 +63,22 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-  
-    <audio id="myAudio">
-        <source src="/assets/mp3/Queen - Don t Stop Me Now (Official Video).mp3">
-        Your browser does not support the audio element.
-      </audio>
-      
-      <p>Click the buttons to play or pause the audio.</p>
-      
-      <button onclick="playAudio()" type="button">Play Audio</button>
-      <button onclick="pauseAudio()" type="button">Pause Audio</button> 
 
+    <figure>
+        <figcaption>Listen to Queen:</figcaption>
+        <audio
+            controls
+            src="/assets/mp3/Queen - Don t Stop Me Now (Official Video).mp3">
+                Your browser does not support the
+                <code>audio</code> element.
+        </audio>
+    </figure>
+    
 
   </div>
+
   <script src="index.js"></script>
-  <script>
-    var x = document.getElementById("myAudio"); 
-    
-    function playAudio() { 
-      x.play(); 
-    } 
-    
-    function pauseAudio() { 
-      x.pause(); 
-    } 
-    </script>
+
 </body>
 
 </html>
